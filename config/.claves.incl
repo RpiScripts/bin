@@ -20,15 +20,17 @@ FTP_SERVIDOR="ftp.servidor.net"
 FTP_USUARIO="ftp.usuario"
 FTP_CLAVE="ftp.clave"
 
-## CLAVE ADMIN ##
-readonly _ADMIN_CLAVE=1111
-# Clave de administración para modificar archivos de configuración en api "inmo"
-
 ## DOMÓTICA ##
 declare -r EDIPLUG_IP="192.168.1.171"
 declare -r EDIPLUG_USUARIO="admin"
 declare -r EDIPLUG_CLAVE="patatata01"
 
+# CÓDIGO ##
 declare -r GIT_USUARIO="JoseaScripts"
 declare -r GIT_CLAVE="qwe123oi09"
 declare -r GIT_REPO="RpiScripts"
+
+## CLAVE ADMIN ##
+readonly _ADMIN_CLAVE=1111
+# Clave de administración para modificar archivos de configuración en api "inmo"
+

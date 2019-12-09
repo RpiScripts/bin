@@ -28,11 +28,7 @@ if [[ -z $CLAVES ]]; then
   printf "Include: $configuracion_oculta\n";
 fi
 
-cd $HOME/bin;
-
-# CONTROL
-# printf "$GIT_USUARIO: $GIT_CLAVE -> $GIT_REPO"
-# exit 0
+cd $GIT_REPO_LOCAL;
 
 # No sube los archivos ocultos de configuración:
 for f in $(ls);
