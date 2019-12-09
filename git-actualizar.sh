@@ -21,9 +21,11 @@ if [[ -z $CONFIGURACION ]]; then
   [[ -f $archivo_configuracion ]] && . $archivo_configuracion
   printf "Include: $archivo_configuracion\n";
 fi
+
+CLAVES=True
 if [[ -z $CLAVES ]]; then
   printf "$CLAVES";
-  configuracion_oculta="$HOME/bin/config/.claves.incl";
+  configuracion_oculta="$HOME/bin/.claves.incl";
   [[ -f $configuracion_oculta ]] && . $configuracion_oculta
   printf "Include: $configuracion_oculta\n";
 fi
