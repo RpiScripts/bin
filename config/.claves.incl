@@ -12,7 +12,7 @@ _claves_incl="Claves cargadas"
 # INCLUDE CON INFO SENSIBLE QUE NO SE DEBE SUBIR A INTERNET
 # Probé con 'declare -r' pero no me cargaba las variables al programa principal.
 
-CLAVES_incl=True;
+CLAVES=True;
 
 ## FTP ##
 FTP_URL_ALCAMAR="ftp://ftp.usuario:ftp.clave@ftp.servidor.net"
@@ -27,4 +27,8 @@ readonly _ADMIN_CLAVE=1111
 ## DOMÓTICA ##
 declare -r EDIPLUG_IP="192.168.1.171"
 declare -r EDIPLUG_USUARIO="admin"
-declare -r EDIPLUG_CLAVE="1234"
+declare -r EDIPLUG_CLAVE="patatata01"
+
+declare -r GIT_USUARIO="JoseaScripts"
+declare -r GIT_CLAVE="qwe123oi09"
+declare -r GIT_REPO="RpiScripts"
