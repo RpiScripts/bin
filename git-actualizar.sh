@@ -45,4 +45,4 @@ git commit -m "$1"
 # git rm bin.config
 #git push -u https://$GIT_USUARIO:$GIT_CLAVE@github.com/$GIT_REPO/bin "$2"
 #git push -u https://github.com/RpiScripts/bin "$2"
-git push -u https://${GIT_USUARIO}@github.com/${GIT_REPO} "$2"
+git push -u https://${GIT_USUARIO}%40github.com/${GIT_REPO} "$2"
