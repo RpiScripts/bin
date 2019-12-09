@@ -11,13 +11,14 @@
 # Añadir commit y rama (branch) por defecto.
 
 ## EJEMPLO ##
+# Estoy teniendo problemas al subir los archivos.
 # git-update.sh "v1.2" "version2"
 
 ## INCLUDES ##
 # Evita incluir dos veces los scripts de configuración.
 if [[ -z $CONFIGURACION ]]; then
   printf "$CONFIGURACION";
-  archivo_configuracion="$HOME/bin/config/pi.conf";
+  archivo_configuracion="$HOME/bin/pi.conf";
   [[ -f $archivo_configuracion ]] && . $archivo_configuracion
   printf "Include: $archivo_configuracion\n";
 fi
@@ -44,4 +45,4 @@ git commit -m "$1"
 # git rm bin.config
 #git push -u https://$GIT_USUARIO:$GIT_CLAVE@github.com/$GIT_REPO/bin "$2"
 #git push -u https://github.com/RpiScripts/bin "$2"
-git push origin master
+git push origin "$2"
