@@ -17,18 +17,22 @@
 # Evita incluir dos veces los scripts de configuración.
 if [[ -z $CONFIGURACION ]]; then
   printf "$CONFIGURACION";
-  archivo_configuracion="$HOME/bin/pi.conf";
+  archivo_configuracion="$HOME/bin/config/pi.conf";
   [[ -f $archivo_configuracion ]] && . $archivo_configuracion
-  printf "Include: $archivo_configuracion=\n";
+  printf "Include: $archivo_configuracion\n";
 fi
 if [[ -z $CLAVES ]]; then
   printf "$CLAVES";
-  configuracion_oculta="$HOME/bin/.claves.incl";
+  configuracion_oculta="$HOME/bin/config/.claves.incl";
   [[ -f $configuracion_oculta ]] && . $configuracion_oculta
   printf "Include: $configuracion_oculta\n";
 fi
 
 cd $HOME/bin;
+
+# CONTROL
+# printf "$GIT_USUARIO: $GIT_CLAVE -> $GIT_REPO"
+# exit 0
 
 # No sube los archivos ocultos de configuración:
 for f in $(ls);
